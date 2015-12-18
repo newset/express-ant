@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Bloo+后台管理系统</title>
+</head>
+<body class="">
+	<div class="login row-flex row-flex-space-around row-flex-middle full-height">
+		<div class="wrapper col-24">
+			<div class="logo-container center">
+				<img src="/img/login-logo.png" alt="">
+			</div>
+			<h3 class="title center"><center>Bloo+后台管理系统</center></h3>
+			<div class="">
+				<div id="form"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+	<script src="/dist/assets/common.js"></script>
+	<script src="/dist/assets/login.js"></script>
+</html>

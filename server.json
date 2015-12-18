@@ -1,0 +1,9 @@
+{
+    "apps": [{
+        "name": "bloodelivery",
+        "script": "bin/www",
+        "watch": "../",
+        "log_date_format": "YYYY-MM-DD HH:mm Z",
+        "autorestart" : false
+    }]
+}

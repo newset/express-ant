@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/app.css')
+		link(rel='stylesheet', href='/css/style.css')
+	body
+		block content
+
+		block script
+			script(src='/dist/assets/common.js')
+			script(src='/dist/assets/main.js')
