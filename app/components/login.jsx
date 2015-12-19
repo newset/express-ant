@@ -71,6 +71,4 @@ const Login = React.createClass({
   }
 });
 
-export default {
-  'Login' : Login
-};
+module.exports = Login;

@@ -26,8 +26,7 @@ module.exports = {
 
     entry: [
         'webpack-hot-middleware/client',
-        './app/js/main.jsx',
-        './app/js/login.jsx'
+        './app/main.jsx'
     ],
     module: {
         loaders: [{

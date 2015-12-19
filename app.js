@@ -1,3 +1,8 @@
+// Register babel to have ES6 support on the server
+
+import React from "react";  
+import Router from "react-router";
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -7,9 +12,6 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
-import React from "react";  
-import Router from "react-router";
 
 var app = express();
 
@@ -33,15 +35,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// // routes
-// app.use('/', routes);
-// app.use('/login', users);
+// routes
+app.use('/', routes);
+app.use('/login', users);
 
-// app.all("/*", function(req, res){
-//   // 判断是否登录
-//   res.render('index', { title: 'Express' });
-// });
-// 
+app.all("/*", function(req, res){
+  // 判断是否登录
+  res.render('index', { title: 'Express' });
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

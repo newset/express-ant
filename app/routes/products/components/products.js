@@ -1,12 +1,12 @@
 import React from 'react'
+import Nav from '../../../components/navbar';
 
 class Products extends React.Component {
 
   render() {
     return (
       <div>
-        <h2>Products</h2>
-        <hr />
+        <Nav />
       </div>
     )
   }

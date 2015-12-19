@@ -8,48 +8,10 @@ const history = useBasename(createHistory)({
 	basename: '/'
 });
 
-class SignedIn extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>Signed In</h2>
-        {this.props.children}
-      </div>
-    )
-  }
-}
-
 class Home extends React.Component {
   render() {
     return (
       <h3>Welcome home!</h3>
-    )
-  }
-}
-
-class SignedOut extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>Signed Out</h2>
-        {this.props.children}
-      </div>
-    )
-  }
-}
-
-class SignIn extends React.Component {
-  render() {
-    return (
-      <h3>Please sign in.</h3>
-    )
-  }
-}
-
-class ForgotPassword extends React.Component {
-  render() {
-    return (
-      <h3>Forgot your password?</h3>
     )
   }
 }
@@ -60,7 +22,8 @@ const rootRoute = {
 		path: '/',
 		component: require('./components/app'),
 		childRoutes: [
-			require('./routes/products')
+			require('./routes/products'),
+      require('./routes/login')
 		]
 	}]
 }

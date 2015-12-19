@@ -19,8 +19,7 @@ class App extends React.Component {
       <div>
         <ol>
           <li><Link to="/products" activeClassName="active">Home</Link></li>
-          <li><Link to="/signin" activeClassName="active">Sign in</Link></li>
-          <li><Link to="/forgot-password" activeClassName="active">Forgot Password</Link></li>
+          <li><Link to="/login" activeClassName="active">Sign in</Link></li>
         </ol>
         {this.props.children}
       </div>
