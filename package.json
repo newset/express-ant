@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "babel-node ./bin/www"
   },
   "entry": {
     "main": "app/js/all.js"
@@ -20,12 +20,14 @@
     "morgan": "~1.5.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-engine": "^2.6.0",
     "react-router": "^1.0.2",
     "serve-favicon": "~2.2.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-core": "~5.8.32",
+    "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "~5.3.2",
     "css-loader": "^0.23.0",
     "extract-text-webpack-plugin": "^0.9.1",

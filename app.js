@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+import React from "react";  
+import Router from "react-router";
+
 var app = express();
 
 // view engine setup
@@ -30,8 +33,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
-app.use('/users', users);
+// // routes
+// app.use('/', routes);
+// app.use('/login', users);
+
+// app.all("/*", function(req, res){
+//   // 判断是否登录
+//   res.render('index', { title: 'Express' });
+// });
+// 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

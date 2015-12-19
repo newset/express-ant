@@ -1,0 +1,22 @@
+{
+  "name": "bloo-delivery",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Insane <luojieyy@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4"
+  }
+}
